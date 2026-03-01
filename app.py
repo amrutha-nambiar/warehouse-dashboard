@@ -58,7 +58,7 @@ body {
 """, unsafe_allow_html=True)
 
 # ---------------- HEADER ----------------
-st.markdown("<h1 style='text-align:center;color:#60a5fa;'>🏢 Enterprise Warehouse Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;color:#60a5fa;'> Enterprise Warehouse Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("---")
 
 # ---------------- SIDEBAR ----------------
@@ -198,4 +198,5 @@ elif menu == "Admin & Security":
         st.info(f"Last System Backup: {max(item['Last_Backup'] for item in data)}")
 
     elif password:
+
         st.error("❌ Unauthorized Access")
